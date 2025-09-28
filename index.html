@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostafa ai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+          "react/": "https://aistudiocdn.com/react@^19.1.1/",
+          "react": "https://aistudiocdn.com/react@^19.1.1",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0c0a09;
+        background-image:
+          radial-gradient(at 27% 37%, hsla(148, 68%, 51%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 97% 21%, hsla(155, 70%, 60%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 52% 99%, hsla(140, 65%, 45%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 10% 29%, hsla(145, 66%, 57%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 97% 96%, hsla(150, 60%, 74%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 44% 47%, hsla(148, 67%, 73%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 18% 99%, hsla(152, 98%, 62%, 0.1) 0px, transparent 50%);
+        color: #f0f0f0;
+      }
+      .glass-card {
+        background: rgba(22, 22, 22, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+      .glass-input {
+         background: rgba(0, 0, 0, 0.2);
+         border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+       .glass-input:focus {
+          outline: none;
+          border-color: rgba(42, 204, 121, 0.5); /* Green focus color */
+          box-shadow: 0 0 0 2px rgba(42, 204, 121, 0.2);
+       }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
